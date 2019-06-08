@@ -1,0 +1,15 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>
+        <%= @cocktail.cocktail_name %>
+      </p>
+      <div class="post-details">
+        カクテルタイプ：<p><%= @cocktail.style_kbn %></p><br>
+        カクテル言葉：<p><%= @cocktail.cocktail_word %></p><br>
+        味：<p><%= @cocktail.taste_kbn %></p><br>
+        度数：<p><%= @cocktail.alcohol_by_volume %></p><br>
+        有名度：<p><%= @cocktail.popularity %></p><br>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="main posts-index">
+  <div class="container">
+    <% @cocktails.each do |cocktail| %>
+      <div class="posts-index-item">
+        <%= link_to(cocktail.cocktail_name, "/cocktails/#{cocktail.cocktail_id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>

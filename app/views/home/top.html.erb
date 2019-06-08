@@ -1,0 +1,16 @@
+<div class="background-image">
+  <div class="profile">
+  </div>
+  <div class="top-message">
+    <p>カクテルレシピアン(仮)</p>
+  </div>
+  <div class="container1">
+    <h5>材料を入力してください</h5>
+    <%= form_tag(cocktails_index_path, method: :get) do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+    <% end %>
+    </div>
+</div>
